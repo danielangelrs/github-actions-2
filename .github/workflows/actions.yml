@@ -1,7 +1,7 @@
 name: JavaScript Action Workflow
 
 on:
-  push:
+  pull_request:
     branches:
       - master
       - "feature/*"
