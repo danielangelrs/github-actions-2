@@ -1,11 +1,11 @@
 name: JavaScript Action Workflow
 
 on:
+  repository_dispatch:
+    types: [build] 
   # push:
   # schedule:
   #   - cron: "* * * * *"
-  repository_dispatch:
-    types: [build]
   pull_request:
     types: [closed, assigned, opened, reopened]
 
